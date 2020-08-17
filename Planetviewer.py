@@ -283,22 +283,22 @@ def root_init_():
             make_bt = Button(root, text='Makemake', font=('Berlin Sans FB', 20), width=15, height=2, bg='#B18564', command=bt_make)
             make_bt.place(x=554, y=100)
 
-            def bt_make():
+            def bthu():
 
-                lb_make = Label(root, image=alpha, bg='black')
-                lb_make.place(x=0, y=0)
+                lb_hau = Label(root, image=alpha, bg='black')
+                lb_hau.place(x=0, y=0)
 
-                def mexit2():
+                def hexit():
 
-                    lb_make.destroy()
-                    bt_mexit2.destroy()
+                    lb_hau.destroy()
+                    bt_hexit.destroy()
 
-                bt_mexit2 = Button(root, text='<<<',font=('arial',12), width=4, command=mexit2)
-                bt_mexit2.place(x=0, y=0)
+                bt_hexit = Button(root, text='<<<',font=('arial',12), width=4, command=hexit)
+                bt_hexit.place(x=0, y=0)
 
 
-            make_bt = Button(root, text='Makemake', font=('Berlin Sans FB', 20), width=15, height=2, bg='#B18564', command=bt_make)
-            make_bt.place(x=554, y=100)
+            hau_bt = Button(root, text='Haumea', font=('Berlin Sans FB', 20), width=15, height=2, bg='#AFB3B3', command=bt_make)
+            hau_bt.place(x=806, y=100)
 
 
             
