@@ -229,7 +229,7 @@ def root_init_():
             lb_bg_3.place(x=0,y=0)
 
             lb_anao = Label(root, text='Planetas anões:', font=font, foreground=c_fore, bg='black')
-            lb_anao.place(x=50,y=50)
+            lb_anao.place(x=50,y=190)
 
             def bt_plut():
                 lb_plut = Label(root, image=imagep, bg='black')
@@ -246,7 +246,7 @@ def root_init_():
 
 
             plut_bt = Button(root, text='Plutão', font=font, width=15, height=2, bg='#FFFEF3', command=bt_plut)
-            plut_bt.place(x=50, y=100)
+            plut_bt.place(x=50, y=240)
             
             def bt_cere():
 
@@ -263,7 +263,7 @@ def root_init_():
 
 
             cere_bt = Button(root, text='Ceres', font=font, width=15, height=2, bg='#B7B6B1', command=bt_cere)
-            cere_bt.place(x=302, y=100)
+            cere_bt.place(x=302, y=240)
 
 
             def bt_make():
@@ -281,7 +281,7 @@ def root_init_():
 
 
             make_bt = Button(root, text='Makemake', font=('Berlin Sans FB', 20), width=15, height=2, bg='#B18564', command=bt_make)
-            make_bt.place(x=554, y=100)
+            make_bt.place(x=554, y=240)
 
             def bthu():
 
@@ -297,10 +297,27 @@ def root_init_():
                 bt_hexit.place(x=0, y=0)
 
 
-            hau_bt = Button(root, text='Haumea', font=('Berlin Sans FB', 20), width=15, height=2, bg='#AFB3B3', command=bt_make)
-            hau_bt.place(x=806, y=100)
+            hau_bt = Button(root, text='Haumea', font=('Berlin Sans FB', 20), width=15, height=2, bg='#AFB3B3', command=bthu)
+            hau_bt.place(x=806, y=240)
 
 
+            def eris():
+
+                lb_er = Label(root, image=alpha, bg='black')
+                lb_er.place(x=0, y=0)
+
+                def eexit():
+
+                    lb_er.destroy()
+                    bt_eexit.destroy()
+
+                bt_eexit = Button(root, text='<<<',font=('arial',12), width=4, command=eexit)
+                bt_eexit.place(x=0, y=0)
+                
+
+
+            er_bt = Button(root, text='Éris', font=('Berlin Sans FB', 20), width=15, height=2, bg='#AFB3B3', command=eris)
+            er_bt.place(x=1058, y=240)
             
 
             def btmexit():
@@ -318,6 +335,9 @@ def root_init_():
                 lo_bt.destroy()
                 cere_bt.destroy()
                 plut_bt.destroy()
+                make_bt.destroy()
+                hau_bt.destroy()
+                er_bt.destroy()
 
             btmexit2 = Button(root, text='<', font=('arial',15),  command=btmexit2_)
             btmexit2.place(x=2, y=360)
@@ -380,6 +400,40 @@ def root_init_():
 
         lo_bt = Button(root, text='Lo', font=('Berlin Sans FB', 20), width=15, height=2, bg='#E1E0DA', command=bt_lo)
         lo_bt.place(x=756, y=470)
+
+        def bt_fo():
+
+            lb_fo = Label(root, image=alpha, bg='black')
+            lb_fo.place(x=0, y=0)
+
+            def fexit():
+
+                lb_fo.destroy()
+                bt_fexit.destroy()
+
+            bt_fexit = Button(root, text='<<<',font=('arial',12), width=4, command=fexit)
+            bt_fexit.place(x=0, y=0)
+
+
+        fo_bt = Button(root, text='Fobos', font=('Berlin Sans FB', 20), width=15, height=2, bg='#E1E0DA', command=bt_fo)
+        fo_bt.place(x=1008, y=470)
+
+        def bt_de():
+
+            lb_de = Label(root, image=alpha, bg='black')
+            lb_de.place(x=0, y=0)
+
+            def dexit():
+
+                lb_de.destroy()
+                bt_dexit.destroy()
+
+            bt_dexit = Button(root, text='<<<',font=('arial',12), width=4, command=dexit)
+            bt_dexit.place(x=0, y=0)
+
+
+        de_bt = Button(root, text='Deimos', font=('Berlin Sans FB', 20), width=15, height=2, bg='#D6C8AE', command=bt_de)
+        de_bt.place(x=0, y=560)
 
         root.mainloop()
         
